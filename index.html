@@ -4,19 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soogle</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/de18e820f6.js"
+      crossorigin="anonymous"
+    ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="headerArea">
+      <div class="left">
+        <a href="https://www.google.com">Soogle 정보</a>
+        <a href="https://www.google.com">스토어</a>
+      </div>
+      <div class="right">
+        <a href="https://www.google.com">Gmail</a>
+        <a href="https://www.google.com">이미지</a>
+        <a href="https://www.google.com"
+          ><i class="bx bxs-grid" style="font-size: 30px"></i
+        ></a>
+        <a href="https://www.google.com"
+          ><img
+            src="https://i.pinimg.com/564x/5b/aa/b9/5baab98508e2114df2fba74d38c7b993.jpg"
+            alt="profile"
+            width="33"
+            height="33"
+            style="border-radius: 50%"
+        /></a>
+      </div>
+    </header>
     <h1>
       <span>S</span>
       <span>o</span>
@@ -28,9 +57,13 @@
     <!-- ! form 태그 = 정보 전송 -->
     <form action="https://www.google.com/search" method="get">
       <input type="text" name="q" />
+      <i class="fa-solid fa-magnifying-glass left-con"></i>
+      <i class="bx bxs-microphone right-con"></i>
+      <i class="bx bxs-keyboard right-con"></i>
       <div class="button-box">
         <button type="submit">Soogle 검색</button>
         <button>I'm Feeling Lucky</button>
+        <!--https://velog.io/@fhwmqkfl/Weegleweegleasdf 참고 !-->
       </div>
     </form>
   </body>

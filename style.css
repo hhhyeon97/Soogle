@@ -4,8 +4,8 @@ body {
 }
 h1 {
   text-align: center;
-  margin-top: 200px;
-  font-family: 'Marhey', sans-serif;
+  margin-top: 100px;
+  font-family: 'Black Han Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 90px;
@@ -41,6 +41,9 @@ input {
   border-radius: 24px;
   width: 40%;
   height: 40px;
+  padding-left: 70px; /* 돋보기 아이콘의 너비만큼 왼쪽 여백 추가 */
+  outline: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .button-box {
@@ -57,7 +60,55 @@ input {
   border: 1px solid #f8f9fa;
   border-radius: 4px;
   margin-left: 20px;
+  cursor: pointer;
+  border: none;
+  opacity: 0.7;
+  padding: 5px 10px;
 }
 .button-box button:nth-child(2) {
-  height: 21px;
+  height: 30px;
+}
+
+.headerArea {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.headerArea .left {
+  margin-top: 25px;
+}
+.headerArea .left a {
+  margin: auto 13px;
+}
+
+.headerArea .right a {
+  margin: 0 10px;
+}
+
+.headerArea .right i {
+  position: relative;
+  top: 9px;
+}
+.headerArea .right img {
+  position: relative;
+  top: 15px;
+  border: 5px solid white;
+  margin-right: 5px;
+}
+
+.headerArea .right img:hover {
+  border: 5px solid rgb(247, 241, 241);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.left-con {
+}
+.right-con {
 }
