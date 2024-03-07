@@ -32,11 +32,7 @@ h1 span:nth-child(5) {
 h1 span:nth-child(6) {
   color: #ea4335;
 }
-/*
-input {
-  
-}
-*/
+
 .button-box {
   display: flex;
   justify-content: center;
@@ -120,16 +116,20 @@ a:hover {
   text-align: center;
 }
 
+.right-con {
+  font-size: 20px;
+  color: #759ad4;
+}
+
 .search-container input {
-  width: 100%;
-  max-width: 500px;
-  padding-left: 60px;
+  width: calc(100% - 100px); /* 아이콘들의 총 너비만큼 감소시킵니다. */
+  padding-left: 50px;
   margin: 0 auto;
   background: #fff;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   outline: none;
-  height: 40px;
+  height: 50px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -140,19 +140,89 @@ a:hover {
   padding: 10px;
 }
 
-.right-con {
-  font-size: 20px;
-  color: #759ad4;
-}
-
 .search-container .fa-magnifying-glass {
-  left: 80px;
+  left: 30px;
 }
 
 .search-container .bxs-microphone {
-  right: 110px;
+  right: 55px;
 }
 
 .search-container .bxs-keyboard {
-  right: 80px;
+  right: 30px;
+}
+
+.search-container input::placeholder {
+  font-size: 14px;
+  color: #999;
+}
+
+@media screen and (max-width: 500px) {
+  .search-container input::placeholder {
+    visibility: hidden;
+  }
+  /*
+  .search-container input::placeholder {
+    font-size: 12px;
+    color: #999;
+  }*/
+
+  .search-container input {
+    width: 80%;
+    padding-left: 45px;
+    margin: 0 auto;
+  }
+  .search-container .fa-magnifying-glass {
+    left: 10px;
+  }
+
+  .search-container .bxs-microphone {
+    right: 25px;
+  }
+
+  .search-container .bxs-keyboard {
+    right: 3px;
+  }
+  h1 {
+    font-size: 70px;
+    letter-spacing: -8px;
+  }
+  .headerArea .left {
+    display: none;
+  }
+  .linkArea {
+    display: none;
+  }
+}
+
+/*링크 영역*/
+.linkArea {
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  margin-top: 20px;
+}
+
+.linkArea a {
+  display: flex;
+  flex-direction: column; /* 수직 방향으로 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  text-decoration: none; /* 링크에 밑줄 제거 */
+  color: #333; /* 링크 색상 설정 */
+  margin: 10px 50px; /* 각 링크 사이의 간격 설정 */
+}
+
+.linkArea .icon {
+  margin-bottom: 5px; /* 아이콘과 제목 사이의 간격 설정 */
+  border-radius: 10px;
+  background-color: #e9eff7;
+  padding: 10px;
+}
+
+.linkArea .icon:hover {
+  background-color: #e0e7e7;
+}
+
+.linkArea .title {
+  font-size: 14px; /* 제목 폰트 크기 설정 */
+  margin-top: 5px;
 }
