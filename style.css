@@ -32,20 +32,11 @@ h1 span:nth-child(5) {
 h1 span:nth-child(6) {
   color: #ea4335;
 }
-
+/*
 input {
-  display: block;
-  margin: 0 auto;
-  background: #fff;
-  border: 1px solid #dfe1e5;
-  border-radius: 24px;
-  width: 40%;
-  height: 40px;
-  padding-left: 70px; /* 돋보기 아이콘의 너비만큼 왼쪽 여백 추가 */
-  outline: none;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
 }
-
+*/
 .button-box {
   display: flex;
   justify-content: center;
@@ -88,12 +79,18 @@ input {
 .headerArea .right i {
   position: relative;
   top: 9px;
+  border: 5px solid white;
 }
 .headerArea .right img {
   position: relative;
-  top: 15px;
+  top: 17px;
   border: 5px solid white;
   margin-right: 5px;
+}
+
+.headerArea .right i:hover {
+  border: 5px solid rgb(247, 241, 241);
+  border-radius: 50%;
 }
 
 .headerArea .right img:hover {
@@ -108,7 +105,54 @@ a:hover {
   text-decoration: underline;
 }
 
-.left-con {
+/*인풋창 배치 다시*/
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.search-container input {
+  width: 100%;
+  max-width: 500px;
+  padding-left: 60px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  outline: none;
+  height: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.search-container i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+
 .right-con {
+  font-size: 20px;
+  color: #759ad4;
+}
+
+.search-container .fa-magnifying-glass {
+  left: 80px;
+}
+
+.search-container .bxs-microphone {
+  right: 110px;
+}
+
+.search-container .bxs-keyboard {
+  right: 80px;
 }
